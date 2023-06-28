@@ -65,11 +65,11 @@ const requestOptions = {
     })
 };
 
-fetch('http://localhost:3000/imageUrl', requestOptions)
+fetch('https://smartbrain-backend-0ijt.onrender.com/imageUrl', requestOptions)
     .then(response => response.json())
     .then(result => {this.displayFaceBox(this.calculateFaceLocation(result))
     if(result){
-      fetch('http://localhost:3000/image', {
+      fetch('https://smartbrain-backend-0ijt.onrender.com/image', {
         method: 'put',
         headers: {'content-type': 'application/json'},
         body: JSON.stringify({

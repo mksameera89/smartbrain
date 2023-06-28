@@ -25,7 +25,7 @@ onRegisterPasswordChange = (event) => {
 }
 
 onSubmitRegister = () => {
-    fetch('Http://localhost:3000/register', {
+    fetch('https://smartbrain-backend-0ijt.onrender.com/register', {
         method: 'post',
         headers: {'content-type': 'application/json'},
         body: JSON.stringify({
